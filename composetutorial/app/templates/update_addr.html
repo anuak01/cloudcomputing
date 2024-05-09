@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Item</title>
+</head>
+<body>
+<form method="POST" action="/update_pm">
+   <h3>Product Information</h3>
+        <input type="hidden" name="id" value="{{ pm.id }}"/>
+        Name<br>
+        <input type="text" name="nm" value="{{ pm.name }}"/>
+        <br/>
+        pm<br>
+        <textarea name="discription">{{ pm.addr }}</textarea><br>
+        City<br>
+        <input type="text" name="supplier" value="{{ pm.city}}"/><br>
+        Pincode<br>
+        <input type="text" name="price" value="{{ pm.pin }}"/><br>
+        <input type="submit" value="submit"/><br>
+</form>
+</body>
+</html>
